@@ -16,7 +16,4 @@ import 'package:flutter/material.dart';
 
 import 'app.dart';
 
-void main({
-  debugShowCheckedModeBanner: false,
-}) =>
-    runApp(const ShrineApp());
+void main() => runApp(const ShrineApp());
