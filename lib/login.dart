@@ -34,13 +34,31 @@ class _LoginPageState extends State<LoginPage> {
             Column(
               children: <Widget>[
                 Image.asset('assets/diamond.png'),
-                const SizedBox(height: 16.0),
+                const SizedBox(height: 20.0),
                 const Text('SHRINE'),
               ],
             ),
             const SizedBox(height: 120.0),
             // TODO: Remove filled: true values (103)
             // TODO: Add TextField widgets (101)
+            TextField(
+              decoration: const InputDecoration(
+                filled: true,
+                labelText: 'Username',
+              ),
+            ),
+            //space
+            const SizedBox(height: 22.0),
+
+            //password
+            TextField(
+              decoration: const InputDecoration(
+                filled: true,
+                labelText: 'Password',
+              ),
+              obscureText: true,
+            ),
+
             // TODO: Add button bar (101)
           ],
         ),
