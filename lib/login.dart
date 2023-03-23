@@ -60,6 +60,24 @@ class _LoginPageState extends State<LoginPage> {
             ),
 
             // TODO: Add button bar (101)
+            OverflowBar(
+              alignment: MainAxisAlignment.end,
+              children: <Widget>[
+                //add buttons
+                TextButton(
+                  child: const Text('CANCEL'),
+                  onPressed: () {},
+                ),
+                // TODO: Add an elevation to NEXT (103)
+                // TODO: Add a beveled rectangular border to NEXT (103)
+                ElevatedButton(
+                  child: const Text('NEXT'),
+                  onPressed: () {
+                    //SHOW NEXT PAGE
+                  },
+                )
+              ],
+            )
           ],
         ),
       ),
