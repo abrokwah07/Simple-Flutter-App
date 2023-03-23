@@ -23,6 +23,10 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   // TODO: Add text editing controllers (101)
+  //this controller is used to clear everything keyed
+  final _usernameController = TextEditingController();
+  final _passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,6 +46,8 @@ class _LoginPageState extends State<LoginPage> {
             // TODO: Remove filled: true values (103)
             // TODO: Add TextField widgets (101)
             TextField(
+              //controller for username
+              controller: _usernameController,
               decoration: const InputDecoration(
                 filled: true,
                 labelText: 'Username',
@@ -52,6 +58,8 @@ class _LoginPageState extends State<LoginPage> {
 
             //password
             TextField(
+              //controller for password
+              controller: _passwordController,
               decoration: const InputDecoration(
                 filled: true,
                 labelText: 'Password',
@@ -60,13 +68,19 @@ class _LoginPageState extends State<LoginPage> {
             ),
 
             // TODO: Add button bar (101)
+            //OverflowBar handles the layout work for you. It positions the buttons horizontally, so they appear next to one another.
             OverflowBar(
               alignment: MainAxisAlignment.end,
               children: <Widget>[
                 //add buttons
                 TextButton(
                   child: const Text('CANCEL'),
-                  onPressed: () {},
+                  onPressed: () {
+                    //this will clear username textfield
+                    _usernameController.clear();
+                    //this will clear password textfield
+                    _passwordController.clear();
+                  },
                 ),
                 // TODO: Add an elevation to NEXT (103)
                 // TODO: Add a beveled rectangular border to NEXT (103)
