@@ -41,6 +41,7 @@ class _BackdropState extends State<Backdrop>
       vsync: this,
     );
   }
+
   // TODO: Add override for didUpdateWidget (104)
 
   @override
@@ -61,7 +62,6 @@ class _BackdropState extends State<Backdrop>
         velocity: _frontLayerVisible ? -_kFlingVelocity : _kFlingVelocity);
   }
 
-  // TODO: Add BuildContext and BoxConstraints parameters to _buildStack (104)
   // TODO: Add BuildContext and BoxConstraints parameters to _buildStack (104)
   Widget _buildStack(BuildContext context, BoxConstraints constraints) {
     const double layerTitleHeight = 48.0;
