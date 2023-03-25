@@ -168,4 +168,3 @@ class _FrontLayer extends StatelessWidget {
   }
 }
 // TODO: Add _BackdropTitle class (104)
-// TODO: Add _BackdropState class (104)

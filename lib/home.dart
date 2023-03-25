@@ -25,16 +25,13 @@ class HomePage extends StatelessWidget {
 
   const HomePage({this.category = Category.all, Key? key}) : super(key: key);
 
+  // TODO: Return an AsymmetricView (104)
   @override
   Widget build(BuildContext context) {
-    // TODO: Return an AsymmetricView (104)
-    @override
-    Widget build(BuildContext context) {
-      // TODO: Pass Category variable to AsymmetricView (104)
-      return AsymmetricView(
-        products: ProductsRepository.loadProducts(category),
-      );
-    }
+    // TODO: Pass Category variable to AsymmetricView (104)
+    return AsymmetricView(
+      products: ProductsRepository.loadProducts(category),
+    );
 
     // TODO: Pass Category variable to AsymmetricView (104)
     return Scaffold(
