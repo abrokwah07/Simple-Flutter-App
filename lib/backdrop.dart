@@ -140,7 +140,7 @@ class _BackdropState extends State<Backdrop>
         ),
         IconButton(
           icon: const Icon(
-            Icons.tune,
+            Icons.logout,
             semanticLabel: 'login',
           ),
           onPressed: () {
